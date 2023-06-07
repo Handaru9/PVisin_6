@@ -35,6 +35,6 @@ function drawCharts(data) {
     var chart3 = new google.visualization.LineChart(document.getElementById('chart3'));
     chart3.draw(data, options);
 
-    var chart4 = new google.visualization.Barchart(document.getElementById('chart4'));
+    var chart4 = new google.visualization.BarChart(document.getElementById('chart4'));
     chart4.draw(data, options);
 }
