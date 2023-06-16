@@ -3,7 +3,7 @@ google.charts.setOnLoadCallback(getSpreadsheetData);
 
 function getSpreadsheetData() {
     var spreadsheetId = '1zCWhvTHqXp2bS68NtmajbPf4tAi_NQiL_D-B6RzEJog';
-    var range = 'Sheet1!A16:E21';
+    var range = 'Sheet2!A1:B5';
 
     var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/' + spreadsheetId + '/gviz/tq?gid=0&range=' + range);
     query.send(handleQueryResponse);
@@ -21,9 +21,9 @@ function handleQueryResponse(response) {
 
 function drawCharts(data) {
     var options = {
-        title: 'Samplefoodstable',
+        title: 'Hasil data penjualan produk makanan',
         width: 500,
-        height: 300
+        height: 300,
     };
 
     var chart1 = new google.visualization.ColumnChart(document.getElementById('chart1'));
